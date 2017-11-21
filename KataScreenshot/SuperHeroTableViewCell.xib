@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,14 +25,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-Vx-VNB" userLabel="Photo Image View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-wV-pZB">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-wV-pZB">
+                        <rect key="frame" x="16" y="93" width="251" height="19"/>
                         <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avengers" translatesAutoresizingMaskIntoConstraints="NO" id="Mdz-hz-o8v" userLabel="Avengers Badge Image VIew">
+                        <rect key="frame" x="287" y="34" width="64" height="72"/>
                         <accessibility key="accessibilityConfiguration">
                             <bool key="isElement" value="YES"/>
                         </accessibility>
@@ -41,6 +47,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="Mdz-hz-o8v" secondAttribute="trailing" constant="8" id="DMr-p7-unx"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Mdz-hz-o8v" secondAttribute="bottom" constant="8" id="Mym-fT-9Xe"/>
                     <constraint firstItem="C6L-Vx-VNB" firstAttribute="centerY" secondItem="C8b-Iu-N7A" secondAttribute="centerY" id="OTJ-7V-WdQ"/>
+                    <constraint firstItem="Mdz-hz-o8v" firstAttribute="leading" secondItem="cvu-wV-pZB" secondAttribute="trailing" constant="20" id="Yzv-QN-4k8"/>
                     <constraint firstItem="C6L-Vx-VNB" firstAttribute="centerX" secondItem="C8b-Iu-N7A" secondAttribute="centerX" id="a0t-5n-NDm"/>
                     <constraint firstItem="C6L-Vx-VNB" firstAttribute="height" secondItem="C8b-Iu-N7A" secondAttribute="height" id="jhn-s1-7Cx"/>
                     <constraint firstItem="cvu-wV-pZB" firstAttribute="leading" secondItem="C8b-Iu-N7A" secondAttribute="leadingMargin" id="vfZ-Bd-vaG"/>
