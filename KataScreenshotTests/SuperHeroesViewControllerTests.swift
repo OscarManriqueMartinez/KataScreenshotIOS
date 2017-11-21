@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KIF
 @testable import KataScreenshot
 
 class SuperHeroesViewControllerTests: ScreenshotTest {
@@ -28,6 +29,15 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
         
         let viewController = getSuperHeroDetailViewController()
         
+        verify(viewController: viewController)
+    }
+    
+    func testShowBottomSuperHeroList() {
+        let superHeros = givenThereAreSomeAvengers()
+
+        let viewController = getSuperHeroDetailViewController()
+        tester().waitForView(withAccessibilityLabel: superHeros.last?.name)
+
         verify(viewController: viewController)
     }
     

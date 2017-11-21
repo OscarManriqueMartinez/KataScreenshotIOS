@@ -12,7 +12,7 @@ import XCTest
 
 class SuperHeroTableViewCellTests: ScreenshotTest {
 
-    private let superHeroAvenger = SuperHero(name: "SuperHero - 1",
+    private let superHeroAvenger = SuperHero(name: "SuperHero - 1 sdsd wagasd asdvlkj asdfhalkjsdh lahd ljhasldjhf lashdh ajshdfjlah sdjhlasjdh lahflahsdlfjh ahsdfljh alsjdhfla sdlfjh alsdhf asdf",
         photo: URL(string: ""),
         isAvenger: true, description: "Description - 1")
     private let superHeroNoAvenger = SuperHero(name: "SuperHero - 2",
