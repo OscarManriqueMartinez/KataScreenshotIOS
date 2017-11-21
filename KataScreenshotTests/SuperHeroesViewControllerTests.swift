@@ -13,6 +13,8 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
 
     fileprivate let repository = MockSuperHeroesRepository()
 
+    // MARK: - Test
+    
     func testShowsEmptyCase() {
         givenThereAreNoSuperHeroes()
 
@@ -20,6 +22,18 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
 
         verify(viewController: viewController)
     }
+    
+    func testShowSuperHeroDetail() {
+        givenThereAreSomeAvengers()
+        
+        let viewController = getSuperHeroDetailViewController()
+        
+        verify(viewController: viewController)
+    }
+    
+    
+    
+    // MARK: - Given
 
     fileprivate func givenThereAreSomeAvengers() -> [SuperHero] {
         return givenThereAreSomeSuperHeroes(avengers: true)
